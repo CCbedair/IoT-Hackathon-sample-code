@@ -5,6 +5,7 @@ from time import time
 import os
 import numpy as np
 import subprocess
+import requests
 
 
 def unique_count_app(a):
@@ -79,6 +80,7 @@ class AdGet:
         self.THR_LUMIN = 110
         self.ttd = int(time()) + 10
         self.ad = "default.jpeg"
+        self.dest = ['192.168.1.56']#, '192.168.1.150']
 
     def get(self, params, faces, bodies):
         print self.ttd, int(time())
@@ -94,6 +96,7 @@ class AdGet:
         print params
         if len(bodies) or len(faces):
             self.ad = "people.jpeg"
+            self.send()
             return
         if temp > self.THR_TEMP:
             self.ad = "warm.jpeg"
@@ -101,18 +104,16 @@ class AdGet:
             self.ad = "rainy.jpeg"
         else:
             self.ad =  "default.jpeg"
+        self.send()
         return
 
-
-class AdSend:
-    def __init__(self):
-        pass
-
-    def send(ad, dest):
-        pass
-
-    def dim(dest):
-        pass
+    def send(self):
+        for d in self.dest:
+            url = "http://"+d+":8080"
+            files = {'file': ('ad.jpeg', open(self.ad,'rb'))}
+            r = requests.post(url, files=files)
+            print r
+        return
 
 
 def main():
