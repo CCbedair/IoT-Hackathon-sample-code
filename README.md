@@ -1,21 +1,22 @@
-# IoT-Hackathon-sample-code
+# IoT-Hackathon 2019 - Mandrill Team
 
-This repository provides examples and instructions for the participants of Nokia challenge in [Iothon 2019](https://iothon.io/).
+## The Shams Project
 
-## Challenge
+We believe in a living and breathable city. What does it mean to be alive for a city? It's about CHANGE, it changes the way it behaves and interacts with their citizens in a smart way.
 
-The challenge is to create example demos of new digital services and business opportunities made possible by [LuxTurrim5G](https://www.luxturrim5g.com/) and μMEC, for a real smart city. The teams are encouraged to come up with services and/or APIs that they consider beneficial as additions to the mobile network, to support the new digital service.
+For that matter, the city limbs, voice, eyes and other senses are provided by the enabling technology of NOKIA uMEC Smart Pole. 
 
-The following aspects are valued when choosing the winner:
-1. Freshness of idea
-2. Feasibility: Theoretical plan + Practical demo
-3. Added value for a smart city citizen, for example: Practical help, Improved safety, Information, Experience (visual, audio, etc.)
-4. Productization: can it be made into a commercial product
+Crossing information from the Time, Humidity, Luminosity, Temperature, Camera, Body detection and faces allows us to display appropriate information to the citizen through the uMEC-Screen.
+
+The context and the set of environmental conditions makes it possible to tailor a unique and direct experience to the citizen.
+
+![alt text](https://github.com/CCbedair/IoT-Hackathon-sample-code/blob/master/photo6228671846400764109.jpg)
+
+
+#### How is this different from regular display information on the street?
+
+You might walk on the same street, but on a different city every time. The display of information is guarantee to be based in many surrounding factors that actually makes the citizen realized that he would always have access to something new and different. This enables a business model where organizations or companies can choose the environmental factor or context in which their offer should be displayed.
 
 ## Setup
 
-During the challenge, the LuxTurrim5G and μMEC devices are emulated with Raspberry Pis and Nokia IoT Connectors. Some of the Raspberry Pis and all of the Nokia IoT Connectors are pre-configured, to kickstart the hacking process.
-
-The pre-configured sensor devices, Raspberry Pis and Nokia IoT Connectors, are set to read data from the sensors and to push it to an InfluxDB instance. For quick instructions on how to access InfluxDB see [How to access an InfluxDB](instructions/How_to_access_InfluxDB.md) under `instructions/` and [Pushing data from Raspberry Pi to InfluxDB](instructions/Push_data_from_RasPI_to_InfluxDB.md) for examples on how to push data from Raspberry Pi to the InfluxDB.
-
-In addition to Raspberry Pi, for which there are plenty of instructions publicly available, there are five Nokia IoT Connectors pre-configured to listen Ruuvi sensors tags and to push the data from them to the InfluxDB. See [airsense](instructions/airsense.txt) under `instructions/` for concise instructions on how to get started with those.
+TBA
