@@ -19,4 +19,10 @@ You might walk on the same street, but on a different city every time. The displ
 
 ## Setup
 
-TBA
+Clone the project on the uMEC, and for the Pole run the following file:
+
+	python smart-pole-ads/pole.py
+
+For the uMEC Monitor run the following file:
+
+	python smart-pole-ads/client/monitor.py
