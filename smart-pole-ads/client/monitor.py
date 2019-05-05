@@ -13,7 +13,7 @@ class myHandler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-type', 'text/html')
         self.end_headers()
-    def do_POST(self):
+    def do_PUT(self):
         global p
         try:
             self._set_headers()
